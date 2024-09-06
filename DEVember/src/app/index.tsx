@@ -7,8 +7,8 @@ import {
   Text,
   View,
 } from "react-native";
-import DayListItem from "./src/components/core/DayListItem";
 
+import DayListItem from "../components/core/DayListItem";
 import { Inter_900Black, useFonts } from "@expo-google-fonts/inter";
 import {
   AmaticSC_400Regular,
@@ -20,7 +20,7 @@ SplashScreen.preventAutoHideAsync();
 
 const days = [...Array(24)].map((val, index) => index + 1);
 
-export default function App() {
+export default function HomeScreen() {
   const [fontLoaded, fontError] = useFonts({
     Inter: Inter_900Black,
     Amatic: AmaticSC_400Regular,

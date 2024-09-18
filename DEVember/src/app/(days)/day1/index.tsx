@@ -4,15 +4,24 @@ import { Stack } from "expo-router";
 
 const DayDetailsScreen = () => {
   return (
-    <View>
+    <View style={styles.container}>
       <Stack.Screen options={{ title: "Day 1" }} />
-      <Text style={{ fontFamily: "AmaticBold", fontSize: 100 }}>
-        DayDetailsScreen
-      </Text>
+      <Text style={styles.headText}>Days Details Screens</Text>
     </View>
   );
 };
 
 export default DayDetailsScreen;
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "#F9EDE3",
+  },
+  headText: {
+    fontSize: 80,
+    marginTop: 50,
+    fontFamily: "AmaticBold",
+    textAlign: "center",
+  },
+});

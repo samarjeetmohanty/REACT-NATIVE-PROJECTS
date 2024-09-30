@@ -35,7 +35,7 @@ const DayDetailsScreen = () => {
       <Markdown>{description}</Markdown>
       <Link href="/day3/editor" asChild>
         <Pressable style={styles.onboardingButton}>
-          <Text style={styles.btnText}>Go to Editor Screen</Text>
+          <Text style={styles.btnText}>Go to Editor</Text>
         </Pressable>
       </Link>
     </SafeAreaView>

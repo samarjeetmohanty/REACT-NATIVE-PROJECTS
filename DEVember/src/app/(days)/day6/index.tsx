@@ -4,24 +4,23 @@ import { Link, Stack } from "expo-router";
 import Markdown from "react-native-markdown-display";
 
 const description = `
-# AirBNB Maps
-How to build the AIRBNB map with React native and expo 
-- Use maps in react native
-- Render custom marker on the map
-- Use a bottom sheet to render list of items
+# What will you learn?'
+- Implement the Tinder Card
+- Animate the card swipe 
+- React native reanimated
 `;
 
 const DayDetailsScreen = () => {
   return (
     <SafeAreaView style={styles.container}>
-      <Stack.Screen options={{ title: "Day 5: Maps" }} />
+      <Stack.Screen options={{ title: "Day 6: Tinder" }} />
 
       <Markdown>{description}</Markdown>
 
       <View>
-        <Link href="/day5/airbnb" asChild>
+        <Link href="/day6/tinder" asChild>
           <Pressable style={styles.onboardingButton}>
-            <Text style={styles.btnText}>AirBNB Maps</Text>
+            <Text style={styles.btnText}>Go to Tinder</Text>
           </Pressable>
         </Link>
       </View>

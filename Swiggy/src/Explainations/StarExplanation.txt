@@ -1,0 +1,16 @@
+CODE :-
+===============================================================================
+
+const fullStars = Math.floor(rating); // * Integer part
+
+{Array(fullStars) .fill() .map((index) => (
+<MaterialIcons key="{index}" name="star" size="{24}" color="#FFD700" />
+))}
+
+===============================================================================
+
+Breakdown :
+1. Creating an array 
+  Array(fullStars) creates a new array with a length equal to the value of fullStars. 
+  For example, if fullStars is 4, this creates an empty array like this: [ , , , , ] (an array of 4 undefined elements).
+

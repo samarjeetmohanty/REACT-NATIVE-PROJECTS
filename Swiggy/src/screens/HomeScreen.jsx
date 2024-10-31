@@ -19,7 +19,9 @@ import RestaurantCard from "../components/RestaurantCard";
 
 // ! Restaurant Data
 import RestaurantsData from "../data/RestaurantsData";
+import { SafeAreaView } from "react-native-safe-area-context";
 
+// ! header section -> image carousel, foods, filter options
 const HeaderComponent = () => {
   return (
     <View style={styles.headerContainer}>
@@ -58,7 +60,7 @@ const HeaderComponent = () => {
 
 const HomeScreen = () => {
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       {/* Search Bar */}
       <View style={styles.searchContainer}>
         <TextInput
@@ -76,7 +78,7 @@ const HomeScreen = () => {
         renderItem={({ item }) => <RestaurantCard restaurant={item} />}
         showsVerticalScrollIndicator={false}
       />
-    </View>
+    </SafeAreaView>
   );
 };
 
@@ -97,7 +99,7 @@ const styles = StyleSheet.create({
   container: { flex: 1 },
   searchContainer: {
     borderWidth: 1,
-    margin: 10,
+    margin: 10, 
     padding: 10,
     flexDirection: "row",
     alignItems: "center",

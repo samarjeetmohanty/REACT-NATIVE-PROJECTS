@@ -1,0 +1,75 @@
+CODE :- 
+
+====================================================================================================
+
+const toggleSection = (sectionTitle) => {
+  setExpandedSections((prev) => ({
+    ...prev,
+    [sectionTitle]: !prev[sectionTitle], // Toggle the section's expanded state
+  }));
+};
+
+
+<Pressable onPress={() => toggleSection(section.title)}>
+<Text>{section.title}</Text>
+</Pressable>
+
+====================================================================================================
+
+EXPLANATION :- 
+
+1. SAY INITIAL STATE : 
+===========================
+    expandedSections = {
+      "Appetizers": false,
+      "Main Course": false,
+      "Desserts": false,
+    };
+
+2. CALLING toggleSection("Main Course") :
+=======================================
+  ie when used pressed on the title toggleSection is called toggleSection("Main Course");
+
+3. STATE UPDATE PROCESS :
+=====================================================================
+   - inside the function, the current state (prev) is : 
+    prev = {
+      "Appetizers": false,
+      "Main Course": false,
+      "Desserts": false,
+    };
+
+  - The UPDATED STATE WILL BE : 
+    expandedSections = {
+      ...prev, // Spread previous state
+      "Main Course": !prev["Main Course"], // Toggle the state
+    };
+
+  - RESULT :
+    expandedSections = {
+      "Appetizers": false,
+      "Main Course": true, // Now expanded
+      "Desserts": false,
+    };
+
+4. CALLING toggleSection("Main Course") Again :
+
+toggleSection("Main Course");
+
+prev = {
+  "Appetizers": false,
+  "Main Course": true,
+  "Desserts": false,
+};
+
+expandedSections = {
+  ...prev, // Spread previous state
+  "Main Course": !prev["Main Course"], // Toggle the state
+};
+
+expandedSections = {
+  "Appetizers": false,
+  "Main Course": false, // Now collapsed
+  "Desserts": false,
+};
+

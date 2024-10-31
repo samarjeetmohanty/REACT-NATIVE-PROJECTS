@@ -1,20 +1,8 @@
-import { ScrollView, StatusBar, StyleSheet, Text, View } from "react-native";
 import React from "react";
-import HomeScreen from "./screens/HomeScreen";
+import Navigation from "./navigation/Navigation";
 
 const App = () => {
-  return (
-    <View style={styles.container}>
-      <StatusBar barStyle={"default"} />
-      <HomeScreen />
-    </View>
-  );
+  return <Navigation />;
 };
 
 export default App;
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-});

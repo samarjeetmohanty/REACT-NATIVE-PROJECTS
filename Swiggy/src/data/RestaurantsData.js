@@ -45,6 +45,51 @@ export default restaurantData = [
           },
         ],
       },
+      {
+        id: "11",
+        name: "Rice",
+        items: [
+          {
+            id: "201",
+            name: "Chicken Fried Rice",
+            price: 260,
+            description:
+              "E: 1142.26 KCal (163.18 KCal), C: 125.05 Grams (17.86 Grams), P: 40.11 Grams (5.73 Grams), F: 51.37 Grams (7.34 Grams)",
+            rating: 4.3,
+            ratings: 34,
+            image:
+              "https://t3.ftcdn.net/jpg/06/20/21/32/360_F_620213250_gu56BnnNp9Z0UCXU77DkiyLcP1C8ZUBb.jpg",
+            veg: false,
+            bestSeller: true,
+          },
+          {
+            id: "202",
+            name: "Egg Fried Rice",
+            price: 220,
+            description:
+              "E: 1729.51 KCal (164.72 KCal), C: 204.54 Grams (19.48 Grams), P: 44.03 Grams (4.19 Grams), F: 79.02 Grams (7.53 Grams)",
+            rating: 4.3,
+            ratings: 52,
+            image:
+              "https://images.getrecipekit.com/20221128162705-how-to-make-chinese-egg-fried-rice-recipe.png?aspect_ratio=16:9&quality=90&",
+            veg: false,
+            bestSeller: false,
+          },
+          {
+            id: "204",
+            name: "Jeera Rice",
+            price: 195,
+            description:
+              "E: 1832.30 KCal (174.50 KCal), C: 246.73 Grams (23.50 Grams), P: 27.51 Grams (2.62 Grams), F: 78.15 Grams (7.44 Grams)",
+            rating: 4.5,
+            ratings: 48,
+            image:
+              "https://www.mrishtanna.com/wp-content/uploads/2019/09/jeera-rice-instant-pot.jpg",
+            veg: true,
+            bestSeller: false,
+          },
+        ],
+      },
     ],
   },
   {
@@ -88,6 +133,51 @@ export default restaurantData = [
             isVeg: false,
             isBestSeller: true,
             quantity: 1,
+          },
+        ],
+      },
+      {
+        id: "11",
+        name: "Rice",
+        items: [
+          {
+            id: "201",
+            name: "Chicken Fried Rice",
+            price: 260,
+            description:
+              "E: 1142.26 KCal (163.18 KCal), C: 125.05 Grams (17.86 Grams), P: 40.11 Grams (5.73 Grams), F: 51.37 Grams (7.34 Grams)",
+            rating: 4.3,
+            ratings: 34,
+            image:
+              "https://t3.ftcdn.net/jpg/06/20/21/32/360_F_620213250_gu56BnnNp9Z0UCXU77DkiyLcP1C8ZUBb.jpg",
+            veg: false,
+            bestSeller: true,
+          },
+          {
+            id: "202",
+            name: "Egg Fried Rice",
+            price: 220,
+            description:
+              "E: 1729.51 KCal (164.72 KCal), C: 204.54 Grams (19.48 Grams), P: 44.03 Grams (4.19 Grams), F: 79.02 Grams (7.53 Grams)",
+            rating: 4.3,
+            ratings: 52,
+            image:
+              "https://images.getrecipekit.com/20221128162705-how-to-make-chinese-egg-fried-rice-recipe.png?aspect_ratio=16:9&quality=90&",
+            veg: false,
+            bestSeller: false,
+          },
+          {
+            id: "204",
+            name: "Jeera Rice",
+            price: 195,
+            description:
+              "E: 1832.30 KCal (174.50 KCal), C: 246.73 Grams (23.50 Grams), P: 27.51 Grams (2.62 Grams), F: 78.15 Grams (7.44 Grams)",
+            rating: 4.5,
+            ratings: 48,
+            image:
+              "https://www.mrishtanna.com/wp-content/uploads/2019/09/jeera-rice-instant-pot.jpg",
+            veg: true,
+            bestSeller: false,
           },
         ],
       },
@@ -137,6 +227,51 @@ export default restaurantData = [
           },
         ],
       },
+      {
+        id: "11",
+        name: "Rice",
+        items: [
+          {
+            id: "201",
+            name: "Chicken Fried Rice",
+            price: 260,
+            description:
+              "E: 1142.26 KCal (163.18 KCal), C: 125.05 Grams (17.86 Grams), P: 40.11 Grams (5.73 Grams), F: 51.37 Grams (7.34 Grams)",
+            rating: 4.3,
+            ratings: 34,
+            image:
+              "https://t3.ftcdn.net/jpg/06/20/21/32/360_F_620213250_gu56BnnNp9Z0UCXU77DkiyLcP1C8ZUBb.jpg",
+            veg: false,
+            bestSeller: true,
+          },
+          {
+            id: "202",
+            name: "Egg Fried Rice",
+            price: 220,
+            description:
+              "E: 1729.51 KCal (164.72 KCal), C: 204.54 Grams (19.48 Grams), P: 44.03 Grams (4.19 Grams), F: 79.02 Grams (7.53 Grams)",
+            rating: 4.3,
+            ratings: 52,
+            image:
+              "https://images.getrecipekit.com/20221128162705-how-to-make-chinese-egg-fried-rice-recipe.png?aspect_ratio=16:9&quality=90&",
+            veg: false,
+            bestSeller: false,
+          },
+          {
+            id: "204",
+            name: "Jeera Rice",
+            price: 195,
+            description:
+              "E: 1832.30 KCal (174.50 KCal), C: 246.73 Grams (23.50 Grams), P: 27.51 Grams (2.62 Grams), F: 78.15 Grams (7.44 Grams)",
+            rating: 4.5,
+            ratings: 48,
+            image:
+              "https://www.mrishtanna.com/wp-content/uploads/2019/09/jeera-rice-instant-pot.jpg",
+            veg: true,
+            bestSeller: false,
+          },
+        ],
+      },
     ],
   },
   {
@@ -180,6 +315,51 @@ export default restaurantData = [
             isVeg: false,
             isBestSeller: true,
             quantity: 1,
+          },
+        ],
+      },
+      {
+        id: "11",
+        name: "Rice",
+        items: [
+          {
+            id: "201",
+            name: "Chicken Fried Rice",
+            price: 260,
+            description:
+              "E: 1142.26 KCal (163.18 KCal), C: 125.05 Grams (17.86 Grams), P: 40.11 Grams (5.73 Grams), F: 51.37 Grams (7.34 Grams)",
+            rating: 4.3,
+            ratings: 34,
+            image:
+              "https://t3.ftcdn.net/jpg/06/20/21/32/360_F_620213250_gu56BnnNp9Z0UCXU77DkiyLcP1C8ZUBb.jpg",
+            veg: false,
+            bestSeller: true,
+          },
+          {
+            id: "202",
+            name: "Egg Fried Rice",
+            price: 220,
+            description:
+              "E: 1729.51 KCal (164.72 KCal), C: 204.54 Grams (19.48 Grams), P: 44.03 Grams (4.19 Grams), F: 79.02 Grams (7.53 Grams)",
+            rating: 4.3,
+            ratings: 52,
+            image:
+              "https://images.getrecipekit.com/20221128162705-how-to-make-chinese-egg-fried-rice-recipe.png?aspect_ratio=16:9&quality=90&",
+            veg: false,
+            bestSeller: false,
+          },
+          {
+            id: "204",
+            name: "Jeera Rice",
+            price: 195,
+            description:
+              "E: 1832.30 KCal (174.50 KCal), C: 246.73 Grams (23.50 Grams), P: 27.51 Grams (2.62 Grams), F: 78.15 Grams (7.44 Grams)",
+            rating: 4.5,
+            ratings: 48,
+            image:
+              "https://www.mrishtanna.com/wp-content/uploads/2019/09/jeera-rice-instant-pot.jpg",
+            veg: true,
+            bestSeller: false,
           },
         ],
       },
@@ -229,6 +409,51 @@ export default restaurantData = [
           },
         ],
       },
+      {
+        id: "11",
+        name: "Rice",
+        items: [
+          {
+            id: "201",
+            name: "Chicken Fried Rice",
+            price: 260,
+            description:
+              "E: 1142.26 KCal (163.18 KCal), C: 125.05 Grams (17.86 Grams), P: 40.11 Grams (5.73 Grams), F: 51.37 Grams (7.34 Grams)",
+            rating: 4.3,
+            ratings: 34,
+            image:
+              "https://t3.ftcdn.net/jpg/06/20/21/32/360_F_620213250_gu56BnnNp9Z0UCXU77DkiyLcP1C8ZUBb.jpg",
+            veg: false,
+            bestSeller: true,
+          },
+          {
+            id: "202",
+            name: "Egg Fried Rice",
+            price: 220,
+            description:
+              "E: 1729.51 KCal (164.72 KCal), C: 204.54 Grams (19.48 Grams), P: 44.03 Grams (4.19 Grams), F: 79.02 Grams (7.53 Grams)",
+            rating: 4.3,
+            ratings: 52,
+            image:
+              "https://images.getrecipekit.com/20221128162705-how-to-make-chinese-egg-fried-rice-recipe.png?aspect_ratio=16:9&quality=90&",
+            veg: false,
+            bestSeller: false,
+          },
+          {
+            id: "204",
+            name: "Jeera Rice",
+            price: 195,
+            description:
+              "E: 1832.30 KCal (174.50 KCal), C: 246.73 Grams (23.50 Grams), P: 27.51 Grams (2.62 Grams), F: 78.15 Grams (7.44 Grams)",
+            rating: 4.5,
+            ratings: 48,
+            image:
+              "https://www.mrishtanna.com/wp-content/uploads/2019/09/jeera-rice-instant-pot.jpg",
+            veg: true,
+            bestSeller: false,
+          },
+        ],
+      },
     ],
   },
   {
@@ -272,6 +497,51 @@ export default restaurantData = [
             isVeg: false,
             isBestSeller: true,
             quantity: 1,
+          },
+        ],
+      },
+      {
+        id: "11",
+        name: "Rice",
+        items: [
+          {
+            id: "201",
+            name: "Chicken Fried Rice",
+            price: 260,
+            description:
+              "E: 1142.26 KCal (163.18 KCal), C: 125.05 Grams (17.86 Grams), P: 40.11 Grams (5.73 Grams), F: 51.37 Grams (7.34 Grams)",
+            rating: 4.3,
+            ratings: 34,
+            image:
+              "https://t3.ftcdn.net/jpg/06/20/21/32/360_F_620213250_gu56BnnNp9Z0UCXU77DkiyLcP1C8ZUBb.jpg",
+            veg: false,
+            bestSeller: true,
+          },
+          {
+            id: "202",
+            name: "Egg Fried Rice",
+            price: 220,
+            description:
+              "E: 1729.51 KCal (164.72 KCal), C: 204.54 Grams (19.48 Grams), P: 44.03 Grams (4.19 Grams), F: 79.02 Grams (7.53 Grams)",
+            rating: 4.3,
+            ratings: 52,
+            image:
+              "https://images.getrecipekit.com/20221128162705-how-to-make-chinese-egg-fried-rice-recipe.png?aspect_ratio=16:9&quality=90&",
+            veg: false,
+            bestSeller: false,
+          },
+          {
+            id: "204",
+            name: "Jeera Rice",
+            price: 195,
+            description:
+              "E: 1832.30 KCal (174.50 KCal), C: 246.73 Grams (23.50 Grams), P: 27.51 Grams (2.62 Grams), F: 78.15 Grams (7.44 Grams)",
+            rating: 4.5,
+            ratings: 48,
+            image:
+              "https://www.mrishtanna.com/wp-content/uploads/2019/09/jeera-rice-instant-pot.jpg",
+            veg: true,
+            bestSeller: false,
           },
         ],
       },
@@ -321,6 +591,51 @@ export default restaurantData = [
           },
         ],
       },
+      {
+        id: "11",
+        name: "Rice",
+        items: [
+          {
+            id: "201",
+            name: "Chicken Fried Rice",
+            price: 260,
+            description:
+              "E: 1142.26 KCal (163.18 KCal), C: 125.05 Grams (17.86 Grams), P: 40.11 Grams (5.73 Grams), F: 51.37 Grams (7.34 Grams)",
+            rating: 4.3,
+            ratings: 34,
+            image:
+              "https://t3.ftcdn.net/jpg/06/20/21/32/360_F_620213250_gu56BnnNp9Z0UCXU77DkiyLcP1C8ZUBb.jpg",
+            veg: false,
+            bestSeller: true,
+          },
+          {
+            id: "202",
+            name: "Egg Fried Rice",
+            price: 220,
+            description:
+              "E: 1729.51 KCal (164.72 KCal), C: 204.54 Grams (19.48 Grams), P: 44.03 Grams (4.19 Grams), F: 79.02 Grams (7.53 Grams)",
+            rating: 4.3,
+            ratings: 52,
+            image:
+              "https://images.getrecipekit.com/20221128162705-how-to-make-chinese-egg-fried-rice-recipe.png?aspect_ratio=16:9&quality=90&",
+            veg: false,
+            bestSeller: false,
+          },
+          {
+            id: "204",
+            name: "Jeera Rice",
+            price: 195,
+            description:
+              "E: 1832.30 KCal (174.50 KCal), C: 246.73 Grams (23.50 Grams), P: 27.51 Grams (2.62 Grams), F: 78.15 Grams (7.44 Grams)",
+            rating: 4.5,
+            ratings: 48,
+            image:
+              "https://www.mrishtanna.com/wp-content/uploads/2019/09/jeera-rice-instant-pot.jpg",
+            veg: true,
+            bestSeller: false,
+          },
+        ],
+      },
     ],
   },
   {
@@ -364,6 +679,51 @@ export default restaurantData = [
             isVeg: false,
             isBestSeller: true,
             quantity: 1,
+          },
+        ],
+      },
+      {
+        id: "11",
+        name: "Rice",
+        items: [
+          {
+            id: "201",
+            name: "Chicken Fried Rice",
+            price: 260,
+            description:
+              "E: 1142.26 KCal (163.18 KCal), C: 125.05 Grams (17.86 Grams), P: 40.11 Grams (5.73 Grams), F: 51.37 Grams (7.34 Grams)",
+            rating: 4.3,
+            ratings: 34,
+            image:
+              "https://t3.ftcdn.net/jpg/06/20/21/32/360_F_620213250_gu56BnnNp9Z0UCXU77DkiyLcP1C8ZUBb.jpg",
+            veg: false,
+            bestSeller: true,
+          },
+          {
+            id: "202",
+            name: "Egg Fried Rice",
+            price: 220,
+            description:
+              "E: 1729.51 KCal (164.72 KCal), C: 204.54 Grams (19.48 Grams), P: 44.03 Grams (4.19 Grams), F: 79.02 Grams (7.53 Grams)",
+            rating: 4.3,
+            ratings: 52,
+            image:
+              "https://images.getrecipekit.com/20221128162705-how-to-make-chinese-egg-fried-rice-recipe.png?aspect_ratio=16:9&quality=90&",
+            veg: false,
+            bestSeller: false,
+          },
+          {
+            id: "204",
+            name: "Jeera Rice",
+            price: 195,
+            description:
+              "E: 1832.30 KCal (174.50 KCal), C: 246.73 Grams (23.50 Grams), P: 27.51 Grams (2.62 Grams), F: 78.15 Grams (7.44 Grams)",
+            rating: 4.5,
+            ratings: 48,
+            image:
+              "https://www.mrishtanna.com/wp-content/uploads/2019/09/jeera-rice-instant-pot.jpg",
+            veg: true,
+            bestSeller: false,
           },
         ],
       },

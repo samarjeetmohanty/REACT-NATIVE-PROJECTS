@@ -6,20 +6,24 @@ import {
   View,
 } from "react-native";
 import React from "react";
-import AntDesign from "@expo/vector-icons/AntDesign";
 import MaterialIcons from "@expo/vector-icons/MaterialIcons";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
+import { useNavigation } from "@react-navigation/native";
 
 const RestaurantCard = ({ restaurant }) => {
+  const navigation = useNavigation();
   return (
-    <Pressable style={styles.container}>
+    <Pressable
+      onPress={() => navigation.navigate("Menu", { restaurant })}
+      style={styles.container}
+    >
       <ImageBackground
         source={{ uri: restaurant.image }}
         style={styles.image}
         imageStyle={styles.imageBorder}
       >
-        <AntDesign
-          name="hearto"
+        <MaterialCommunityIcons
+          name="heart-outline"
           size={24}
           color="white"
           style={styles.heartIcon}

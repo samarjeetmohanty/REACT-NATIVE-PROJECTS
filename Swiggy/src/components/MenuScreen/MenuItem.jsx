@@ -1,8 +1,34 @@
 import { Image, Pressable, StyleSheet, Text, View } from "react-native";
 import React from "react";
 import MaterialIcons from "@expo/vector-icons/MaterialIcons";
+import { useDispatch, useSelector } from "react-redux";
+import {
+  addItemToCart,
+  decrementItemQuantity,
+  incrementItemQuantity,
+} from "../../redux/slices/cartSlice";
+
+import Entypo from "@expo/vector-icons/Entypo";
 
 const MenuItem = ({ product }) => {
+  const dispatch = useDispatch();
+
+  const handleAddToCart = () => {
+    dispatch(addItemToCart(product));
+  };
+
+  const handleIncrement = () => {
+    dispatch(incrementItemQuantity({ id: product.id }));
+  };
+
+  const handleDecrement = () => {
+    dispatch(decrementItemQuantity({ id: product.id }));
+  };
+
+  const cartItem = useSelector((state) =>
+    state.cart.items.find((item) => item.id === product.id)
+  );
+
   return (
     <View style={styles.menuItemContainer}>
       <View style={styles.productInfo}>
@@ -15,9 +41,28 @@ const MenuItem = ({ product }) => {
       </View>
       <View style={styles.productImageContainer}>
         <Image source={{ uri: product.image }} style={styles.productImage} />
-        <Pressable style={styles.addButton}>
-          <Text style={styles.addButtonText}>ADD</Text>
-        </Pressable>
+
+        {cartItem ? (
+          <View style={[styles.addButton, styles.quantityContainer]}>
+            <Entypo
+              name="minus"
+              size={20}
+              color="#018749"
+              onPress={handleDecrement}
+            />
+            <Text style={styles.addButtonText}>{cartItem.quantity}</Text>
+            <Entypo
+              name="plus"
+              size={20}
+              color="#018749"
+              onPress={handleIncrement}
+            />
+          </View>
+        ) : (
+          <Pressable onPress={handleAddToCart} style={styles.addButton}>
+            <Text style={styles.addButtonText}>ADD</Text>
+          </Pressable>
+        )}
       </View>
     </View>
   );
@@ -132,5 +177,11 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: "600",
     color: "#018749",
+  },
+  quantityContainer: {
+    flexDirection: "row",
+    paddingHorizontal: 15,
+    gap: 20,
+    alignItems: "center",
   },
 });

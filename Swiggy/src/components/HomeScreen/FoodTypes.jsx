@@ -2,7 +2,7 @@
 
 import { Image, ScrollView, StyleSheet, Text, View } from "react-native";
 import React from "react";
-import foodTypes from "../data/FoodTypesData";
+import foodTypes from "../../data/FoodTypesData";
 
 // Renders Food Type Categories as Scrollable Items
 const FoodTypes = () => (

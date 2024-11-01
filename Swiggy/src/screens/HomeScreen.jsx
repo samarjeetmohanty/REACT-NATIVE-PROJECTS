@@ -12,10 +12,10 @@ import {
 import React from "react";
 
 import Ionicons from "@expo/vector-icons/Ionicons";
-import ImageCarousel from "../components/Carousel";
-import FoodTypes from "../components/FoodTypes";
-import QuickFood from "../components/QuickFood";
-import RestaurantCard from "../components/RestaurantCard";
+import ImageCarousel from "../components/HomeScreen/Carousel";
+import FoodTypes from "../components/HomeScreen/FoodTypes";
+import QuickFood from "../components/HomeScreen/QuickFood";
+import RestaurantCard from "../components/HomeScreen/RestaurantCard";
 
 // ! Restaurant Data
 import RestaurantsData from "../data/RestaurantsData";
@@ -99,7 +99,7 @@ const styles = StyleSheet.create({
   container: { flex: 1 },
   searchContainer: {
     borderWidth: 1,
-    margin: 10, 
+    margin: 10,
     padding: 10,
     flexDirection: "row",
     alignItems: "center",

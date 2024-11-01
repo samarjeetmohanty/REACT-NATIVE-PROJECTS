@@ -10,7 +10,7 @@ import {
   View,
 } from "react-native";
 import MaterialIcons from "@expo/vector-icons/MaterialIcons";
-import QuickFoodData from "../data/QuickFoodData";
+import QuickFoodData from "../../data/QuickFoodData";
 
 // Renders Quick Food Section with Image and Rating
 const QuickFood = () => (

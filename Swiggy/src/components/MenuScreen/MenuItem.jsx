@@ -10,11 +10,11 @@ import {
 
 import Entypo from "@expo/vector-icons/Entypo";
 
-const MenuItem = ({ product }) => {
+const MenuItem = ({ product, restaurantName }) => {
   const dispatch = useDispatch();
 
   const handleAddToCart = () => {
-    dispatch(addItemToCart(product));
+    dispatch(addItemToCart({ ...product, restaurantName }));
   };
 
   const handleIncrement = () => {

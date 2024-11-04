@@ -2,7 +2,6 @@ import {
   Dimensions,
   Pressable,
   SectionList,
-  StatusBar,
   StyleSheet,
   Text,
   View,
@@ -52,15 +51,15 @@ const MenuScreen = () => {
   );
 
   const renderItem = ({ item, section }) =>
-    expandedSections[section.title] && (
-      <View style={styles.menuItemContainer}>
-        <MenuItem product={item} />
-      </View>
-    );
+    
+  expandedSections[section.title] && (
+    <View style={styles.menuItemContainer}>
+      <MenuItem product={item} restaurantName={restaurant.name} />
+    </View>
+  );
 
   return (
     <SafeAreaView edges={["top"]} style={styles.container}>
-      <StatusBar backgroundColor={"#e3e4e9"} barStyle={"default"} />
       <SectionList
         sections={restaurant?.menu.map((section) => ({
           title: section?.name,
